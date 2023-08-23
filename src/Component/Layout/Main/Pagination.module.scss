@@ -8,6 +8,11 @@
             button {
                 cursor: pointer;
                 padding: .4em .8em; 
+
+                span {
+                    color: var(--black__color);
+                    font-size: 1rem;
+                }
             }
         }
 
