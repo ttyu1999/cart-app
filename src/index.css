@@ -51,6 +51,7 @@ a {
 }
 
 button {
+  color: var(--black__color);
   line-height: 1;
   cursor: pointer;
   border: none;
