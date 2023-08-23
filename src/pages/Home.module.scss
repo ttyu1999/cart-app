@@ -1,0 +1,65 @@
+.home {
+    :global {
+        padding-bottom: 2rem;
+
+        .banner {
+            width: min(1280px, 95%);
+            margin: auto;
+            .mySwiper {
+                .swiper-slide {
+                    img {
+                        aspect-ratio: 2 / 1;
+                    }
+                }
+            }
+        }
+
+        .login__box {
+            color: var(--white__color);
+            text-align: center;
+            margin-block: 3rem;
+            padding-block: 1.5rem;
+            background-color: var(--light__green__color);
+
+            h2 {
+                font-weight: 500;
+                font-size: 1.25rem;
+            }
+
+            .icon {
+                color: var(--white__color);
+                cursor: auto;
+                font-size: 3rem;
+                justify-items: center;
+            }
+
+            .btn {
+                --seconds: .3s;
+                color: var(--dark__green__color);
+                width: 8rem;
+                padding: .7rem 1.4rem;
+                margin: .5rem;
+                background-color: var(--white__translucent__color);
+                border-radius: 1.5rem;
+                transition: color var(--seconds) ease-in-out,
+                            background-color var(--seconds) ease-in-out,
+                            transform var(--seconds) ease-in-out;
+
+                &:hover {
+                    color: var(--white__color);
+                    background-color: var(--dark__green__color);
+                    transform: translateY(-.15rem);
+                }
+            }
+        }
+
+        .products__box {
+            width: min(1280px, 95%);
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(min(210px, 49%), 1fr));
+            justify-content: space-evenly;
+            gap: .5em;
+        }
+    }
+}

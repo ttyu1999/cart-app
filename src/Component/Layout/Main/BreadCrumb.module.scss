@@ -1,0 +1,39 @@
+.breadcrumb {
+    padding: .5em 0;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: var(--white__translucent__color);
+    position: sticky;
+    top: calc(24px + 3rem);
+    z-index: 10;
+
+    @media screen and (max-width: 601px) {
+        top: calc(20px + 1.5rem);
+    }
+
+    li {
+
+        ~ li::before {
+            content: '/';
+            margin-inline: .3em;
+        }
+
+        button {
+            color: var(--black__color);
+            font-size: .8rem;
+            cursor: pointer;
+            transition: color .3s ease-in-out;
+
+            &:hover {
+                color: var(--light__pink__color);
+            }
+        }
+
+        &:last-of-type {
+            button {
+                color: var(--dark__green__color);
+                font-weight: 500;
+            }
+        }
+    }
+}

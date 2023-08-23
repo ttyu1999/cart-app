@@ -1,0 +1,191 @@
+.show__modal {
+    animation: showModal .2s ease-in;
+}
+
+.remove__modal {
+    animation: hideModal .3s ease-out;
+}
+
+.product__modal {
+
+    :global {
+        width: min(800px, 85%);
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: var(--white__color);
+        border: none;
+        border-radius: 1em;
+        box-shadow: 0 0 1.5em #00000052;
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 1em;
+            padding: 2.8em 1.8em;
+            max-height: 95vh;
+            overscroll-behavior: contain;
+            -ms-scroll-chaining: contain;
+
+
+            .item:nth-of-type(1) {
+                width: 0;
+                flex: 0 1 250px;
+            }
+
+            .item:nth-of-type(2) {
+                flex: 2 1 300px;
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: space-between;
+                gap: .8em;
+            }
+
+            .pic {
+                overflow: hidden;
+                position: relative;
+            }
+            
+            .pic,
+            .pic img {
+                aspect-ratio: 1 / 1;
+                object-fit: cover;
+                background-color: var(--white__color);
+            }
+
+            .txt {
+                display: flex;
+                flex-direction: column;
+                gap: .5em;
+
+                h2,p {
+                    display: block;
+                    height: auto;
+                }
+                h2 {
+                    font-size: 1.1rem;
+                    font-weight: 500;
+                }
+                
+                p {
+                    color: var(--gray__black__color);
+                    font-size: .9rem;
+                    text-align: justify;
+                }
+            }
+
+            .price__box {
+                flex: 8 1 115px;
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: row-reverse;
+                justify-content: flex-end;
+                align-items: baseline;
+                gap: 0 .5em;
+
+                .price {
+                    color: var(--dark__green__color);
+                    font-size: 1.2em;
+                    font-weight: 700;
+                }
+                
+                .ori__price {
+                    color: var(--dark__gray__color);
+                    font-size: .75rem;
+                }
+            }
+
+            .purchase__buttons__box {
+                display: flex;
+                gap: .5em;
+                flex: 1 1 100%;
+
+                .btn {
+                    color: var(--white__color);
+                    flex: 8 1 200px;
+                    padding: .9em 0;
+                    cursor: pointer;
+                    transition: background .3s ease-in-out;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+    
+                    span {
+                        font-size: 1em;
+                        color: var(--white__color);
+                    }
+
+                    @media screen and (max-width: 768px) {
+                        span {
+                            font-size: .8em;
+                        } 
+                    }
+                }
+
+                .read__more__btn {
+                    background-color: var(--light__pink__color);
+    
+                    &:hover {
+                        background-color: var(--dark__pink__color);
+                    }
+                }
+                
+                
+                .add__cart__btn {
+                    background-color: var(--primary__color);
+    
+                    .icon {
+                        color: var(--white__color);
+                        font-size: 1.5em;
+                        padding-right: .25em;
+                        transition: color .3s ease-in-out;
+                    }
+    
+                    &:hover {
+                        background-color: var(--dark__green__color);
+                    }
+                }
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            .container {
+                padding: 2em 1.2em;
+            } 
+        }
+        
+        .cancel {
+            position: fixed;
+            inset: .3em .3em auto auto;
+            cursor: pointer;
+            padding: .5em;
+        }
+    }
+}
+
+.scroll {
+    overflow: auto;
+}
+
+
+@keyframes showModal {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+
+@keyframes hideModal {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}

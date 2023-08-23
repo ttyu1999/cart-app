@@ -1,0 +1,23 @@
+.price__box {
+    :global {
+        font-size: 1.2rem;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+        align-items: baseline;
+        gap: .5em;
+    
+        .ori__price {
+            color: var(--dark__gray__color);
+            font-size: .5em;
+            text-decoration: line-through;
+        }
+    
+        .price {
+            color: var(--dark__green__color);
+            font-size: 1em;
+            font-weight: 700;
+        }
+    }
+}

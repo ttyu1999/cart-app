@@ -1,0 +1,108 @@
+.product__list {
+    :global {
+        padding: .75em;
+        position: relative;
+        overflow: hidden;
+        background-color: var(--white__color);
+        transition: box-shadow .3s ease-in-out,
+        transform .2s ease-in-out;
+    
+        .wrap {
+            display: flex;
+            flex-direction: column;
+            gap: .5em;
+    
+            .txt {
+                display: flex;
+                flex-direction: column;
+                gap: .5em;
+    
+                h2, p {
+                    display: -webkit-box;
+                    -webkit-box-orient: vertical;
+                    -webkit-line-clamp: 2;
+                    overflow: hidden;
+                    height: 3em;
+                }
+    
+                h2 {font-size: .9rem; font-weight: 500;}
+                
+                p {font-size: .8rem; color: var(--gray__black__color);}
+            }
+    
+            .pic,
+            .pic img {
+                aspect-ratio: 1 / 1;
+                object-fit: cover;
+                background-color: var(--white__color);
+            }
+    
+            .pic {
+                overflow: hidden;
+                position: relative;
+            }
+            
+            .pic img {
+                position: absolute;
+                inset: 0;
+    
+                &:nth-of-type(2) {
+                    position: relative;
+                    z-index: 2;
+                    opacity: 0;
+                    transition: opacity .3s ease-in-out;
+                }
+            }
+        }
+    
+        .quick__view__btn {
+            color: var(--black__color);
+            font-size: .8em;
+            padding: .5em 0 .5em 1em;
+            opacity: 0;
+            margin-left: auto;
+            transform: translateX(4.35em);
+            transition: opacity .2s ease-in-out, transform .2s ease-in-out;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+    
+            .quick__view {
+                padding-right: .5em;
+                margin-top: -.1em;
+            }
+        }
+    
+        @media screen and (max-width: 821px) {
+            .quick__view__btn {
+                transform: translate(0);
+                opacity: 1;
+            }
+        }
+    }
+
+    &:global {
+        &:hover {
+    
+            .pic img:nth-of-type(2) {
+                opacity: 1;
+            }
+            
+            .quick__view__btn {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+    }
+}
+
+.isSoldOut {
+    max-width: max-content;
+    margin-left: auto;
+    color: var(--white__color);
+    font-size: .8em;
+    text-align: center;
+    border-radius: .2em;
+    background-color: var(--dark__pink__color);
+    padding: .25em .5em;
+}

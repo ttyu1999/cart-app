@@ -1,0 +1,89 @@
+:root {
+  font-size: 16px;
+  --white__color: #fff;
+  --white__translucent__color: #ffffffeb;
+  --primary__color: #58b086;
+  --dotted__color: #8cc8ac;
+  --light__green__color: #aed6c3;
+  --dark__green__color: #077f67;
+  --light__gray__color: #eee;
+  --middle__gray__color: #585858;
+  --dark__gray__color: #ccc;
+  --black__color: #242424;
+  --gray__black__color: #3d3d3d;
+  --light__pink__color: #f87e7e;
+  --dark__pink__color: #eb6565;
+  --orange__color: #f07050;
+}
+
+*, *::before, *::after {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: 'Roboto Condensed', 'Noto Sans TC', sans-serif;
+}
+
+body {
+  background-color: var(--white__color);
+  color: var(--black__color);
+  line-height: 1.5;
+  letter-spacing: .1rem;
+}
+
+body.commodity-mode {
+  overflow-y: hidden;
+  scrollbar-gutter: stable;
+  padding-right: 17.5px; /* 增加一個與滾輪同寬的padding */
+}
+
+body .icon {
+  cursor: pointer;
+  font-size: 1.1em;
+  display: grid;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--black__color);
+  cursor: pointer;
+}
+
+button {
+  line-height: 1;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  letter-spacing: .1rem;
+}
+
+input:focus {
+  outline: none;
+}
+
+input, textarea {
+  font-size: initial;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+@media screen and (max-width: 1024px) {
+  :root {
+      font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  :root {
+      font-size: 14px;
+  }
+
+  body.commodity-mode {
+      padding-right: 0;
+  }
+}

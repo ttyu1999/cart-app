@@ -1,0 +1,151 @@
+.show__modal {
+    animation: slide-in .3s ease-in-out;
+}
+
+.remove__modal {
+    animation: slide-out .4s ease-in-out;
+}
+
+.nav {
+    :global {
+        width: clamp(250px, 40vw, 350px);
+        background-color: var(--white__color);
+        box-shadow: 0 0 5px #0000003d;
+
+        li {
+            button, a {
+                color: var(--black__color);
+                flex: 1 1 auto;
+                font-size: .9em;
+                text-align: left;
+                width: 100%;
+                padding: .8em 1.5em;
+            }
+        }
+
+        input[type="checkbox"] {
+            display: none;
+        }
+
+        .icon {
+            padding: .8em;
+        }
+
+        .menu__group {
+            display: grid;
+            grid-template-rows: auto 1fr auto;
+            height: 100vh;
+
+            .menu {
+                overflow-x: hidden;
+                overflow-y: overlay;
+                overscroll-behavior: contain;
+                -ms-scroll-chaining: contain;
+
+                .icon {
+                    color: var(--black__color);
+                    font-size: 1rem;
+                }
+
+                li {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    input[type="checkbox"]:checked ~ .drop__down {
+                        visibility: visible;
+                        opacity: 1;
+                    }
+                }
+
+                ul {
+                    display: flex;
+                    flex-direction: column;
+
+
+                    li {
+                        .drop__down {
+                            position: absolute;
+                            inset: 0;
+                            transition: visibility .2s ease-in-out,
+                                        opacity .2s ease-in-out;
+                            background-color: var(--white__color);
+                            visibility: hidden;
+                            opacity: 0;
+                        }
+                    }
+                }
+            }
+
+            .menu__header {
+                position: sticky;
+                text-align: center;
+                padding: 1rem;
+
+
+                h2,h3 {
+                    font-size: 1.1em;
+                    color: var(--dark__green__color);
+                }
+
+                h3 {
+                    font-size: 1em;
+                    font-weight: 500;
+                }
+
+                .icon {
+                    font-size: 1.2em;
+                    color: var(--dark__green__color);
+                }
+
+                /* X 跟回上一頁 */
+                .menu__close,
+                .back__prev {
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    color: var(--dark__green__color);
+                }
+
+                .menu__close {
+                    right: 0;
+                }
+        
+                .back__prev {
+                    left: 0;
+                }
+            }
+
+            .menu__footer {
+                ul {
+                    display: flex;
+                    flex-wrap: wrap;
+                    margin-top: auto;
+
+                    li {
+                        flex: 1 1 50%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@keyframes slide-in {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+}
+
+@keyframes slide-out {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+}
+

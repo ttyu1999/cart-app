@@ -1,0 +1,53 @@
+.quantity__box {
+    >:global {
+        > div {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+    :global {
+        flex: 0 1 auto;
+
+        .control__quantity {
+            border-radius: .25rem;
+            background-color: var(--light__gray__color);
+            cursor: pointer;
+            transition: background .1s ease-in-out;
+
+            .icon {
+                color: var(--middle__gray__color);
+                padding: .6rem;
+                font-weight: 700;
+                transition: color .1s ease-in-out;
+            }
+
+            &:active {
+                background-color: var(--dark__gray__color);
+
+                .icon {
+                    color: var(--white__color);
+                }
+            }
+
+            @media screen and (max-width: 769px) {
+                .icon {
+                    font-size: .85rem;
+                }
+            }
+        }
+
+        .user__buy__quantity {
+            width: 2rem;
+            color: var(--middle__gray__color);
+            text-align: center;
+            border: none;
+            background-color: transparent;
+    
+            &::-webkit-inner-spin-button {
+                -webkit-appearance: none;
+                margin: 0;
+            }
+        }
+    }
+}

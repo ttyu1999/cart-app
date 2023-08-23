@@ -1,0 +1,116 @@
+.header {
+    :global {
+        position: sticky;
+        top: 0;
+        z-index: 999;
+        background-color: var(--white__translucent__color);
+        box-shadow: 0 0px 5px #0000003d;
+
+        button {
+            font-size: 1.5rem;
+        }
+
+        .icon {
+            font-size: 1.5rem;
+            padding: .5em;
+            cursor: pointer;
+            color: var(--dark__green__color);
+            transition: color .4s ease-in-out -.15s;
+        }
+
+        @media screen and (max-width: 601px) {
+            .icon {
+                padding: .25em;
+            }
+        }
+        
+        .group {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: min(1280px, 95%);
+            margin: 0 auto;
+        }
+    
+        .logo {
+            order: 2;
+    
+            h1 {
+                font-size: 0;
+            }
+    
+            a {
+                padding: 1.5rem;
+            }
+        }
+
+        @media screen and (max-width: 601px) {
+            .logo {
+                a {
+                    padding: .75rem;
+                    img {
+                        max-width: 150px;
+                    }
+                }
+            }
+        }
+
+        .menu {
+            order: 1;
+            margin-right: auto;
+        }
+
+        .login {
+            order: 4;
+        }
+
+        .shopping__cart {
+            order: 5;
+
+            .icon {
+                & > div {
+                position: relative;
+
+                    .item {
+                        color: #fff;
+                        font-size: 0.75rem;
+                        width: 1.15rem;
+                        aspect-ratio: 1 / 1;
+                        border-radius: 50%;
+                        background-color: var(--dark__pink__color);
+                        position: absolute;
+                        right: -.4rem;
+                        top: -.65rem;
+                        display: grid;
+                        place-content: center;
+                        box-shadow: 0 0 0 .15rem var(--white__translucent__color);
+                    }
+                }
+            }
+        }
+
+        .bump {
+            & :local {
+                animation: bump 300ms ease-out;
+            }
+        }
+    }
+}
+
+@keyframes bump {
+    0% {
+      transform: scale(1);
+    }
+    10% {
+      transform: scale(0.9);
+    }
+    30% {
+      transform: scale(1.1);
+    }
+    50% {
+      transform: scale(1.15);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }

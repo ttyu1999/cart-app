@@ -1,0 +1,40 @@
+.backdrop {
+    position: fixed;
+    inset: 0;
+    background-color: #00000073;
+    z-index: 1000;
+    animation: show-backdrop .3s ease-in;
+}
+
+.remove__backdrop {
+    animation: hide-backdrop .4s ease-out;
+}
+
+.modal {
+    position: fixed;
+    z-index: 1001;
+}
+
+.margin__left {
+    inset: 0 0 0 auto;
+}
+
+
+@keyframes show-backdrop {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+
+@keyframes hide-backdrop {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+}
+

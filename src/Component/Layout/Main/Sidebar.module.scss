@@ -1,0 +1,141 @@
+.sidebar {
+    // 第一層選單
+    > ul > li > * {
+        color: var(--dark__green__color);
+        font-weight: 500;
+    }
+
+    &:global {
+        &::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+
+        &::-webkit-scrollbar {
+            width: .4em;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background-color: rgba(0, 0, 0, 0.2);
+            border-radius: 4px;
+        }
+    }
+
+    :global {
+        --height: 0fr;
+        padding-right: .8em;
+        position: relative;
+        flex: 0 1 var(--sidebar__width);
+        position: sticky;
+        top: calc(24px + 3rem);
+        max-height: calc(100vh - 70px);
+        /* Chrome 114 版不再支援overlay:( */
+        overflow: overlay;
+        overscroll-behavior: contain;
+        -ms-scroll-chaining: contain;
+        scrollbar-gutter: stable;
+
+        ul li {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+
+            a {
+                font-size: .9rem;
+                text-align: left;
+                flex: 1 1 0;
+                padding: .6em .5em;
+                cursor: pointer;
+                transition: color .3s ease-in-out;
+
+                span {
+                    position: relative;
+                    transition: color .2s ease-in-out;
+
+                    &:before {
+                        content: '';
+                        position: absolute;
+                        bottom: -.25em;
+                        width: 0;
+                        height: 1px;
+                        background-color: var(--light__pink__color);
+                        transition: width .2s ease-in-out;
+                    }
+                }
+
+                &:hover {
+                    span {
+                        color: var(--light__pink__color);
+
+                        &:before {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+
+            &:has(.active) > *,
+            .active {
+                & > span {
+                    color: var(--light__pink__color);
+                }
+            }
+
+            .checked {
+                grid-template-rows: 1fr;
+            }
+
+            .unchecked {
+                grid-template-rows: 0fr;
+            }
+
+            .rotate {
+                transform: rotate(180deg);
+            }
+
+            .icon {
+                flex: 0 1 auto;
+                font-size: .9rem;
+                font-weight: 700;
+                transition: transform .5s ease-in-out;
+            }
+
+                /* 下拉選單控制 */
+            .drop__down {
+                width: 100%;
+                padding-left: 1em;
+                display: grid;
+                transition: grid-template-rows 1.5s;
+
+                > ul {
+                    overflow: hidden;
+                }
+            }
+
+            /* 第二層選單 */
+            .sub__menu {
+                li:has(.sub__menu) > * {
+                    color: var(--primary__color);
+                    font-weight: 500;
+                }
+
+                a {
+                    display: -webkit-box;
+                    -webkit-box-orient: vertical;
+                    -webkit-line-clamp: 2;
+                    overflow: hidden;
+                    color: var(--gray__black__color);
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 769px) {
+    .sidebar {
+        display: none;
+    }
+}
