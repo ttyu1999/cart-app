@@ -6,10 +6,12 @@ import { HiOutlineChevronDown } from "react-icons/hi";
 import MENU_DATA from "../../../assets/menu-data";
 import useFindMenuItem from "../../../hook/useFindMenuItem";
 import useBreadCrumb from "../../../hook/useBreadCrumb";
+import useGetPath from "../../../hook/useGetPath";
 
 const Sidebar = () => {
   const [getActiveId, setGetActiveId] = useState([]);
   const [expandedState, setExpandedState] = useState({});
+  const { pathStr } = useGetPath();
   const { categoriesClick } = useFindMenuItem();
   const { getListBreadCrumb } = useBreadCrumb();
 
@@ -22,13 +24,6 @@ const Sidebar = () => {
     });
   };
 
-  const location = useLocation();
-  const path = location.pathname;
-
-  const pathArray = path.split("/");
-  pathArray.splice(0, 2);
-  const pathStr = pathArray.join();
-
   const activeLinkId = useCallback(() => {
     const activeItem = getListBreadCrumb(pathStr, MENU_DATA);
     const activeId = activeItem && activeItem.map((item) => item.id);
@@ -39,8 +34,6 @@ const Sidebar = () => {
     activeLinkId();
   }, [activeLinkId]);
 
-  console.log(getActiveId);
-
   const renderListItem = (menu) => {
     const isSubMenuExpanded = expandedState[menu.id] || false;
     const isMenuActive =
@@ -48,12 +41,12 @@ const Sidebar = () => {
     return (
       <li key={menu.id}>
         {menu.id === "000000" ? (
-          <Link to={`/product`} onClick={() => categoriesClick(menu.id, null)}>
+          <Link to={`../product`} onClick={() => categoriesClick(menu.id, null)}>
             <span>{menu.name}</span>
           </Link>
         ) : (
           <NavLink
-            to={`/product/${menu.id}`}
+            to={`../product/${menu.id}`}
             onClick={() => categoriesClick(menu.id, null)}
           >
             <span>{menu.name}</span>

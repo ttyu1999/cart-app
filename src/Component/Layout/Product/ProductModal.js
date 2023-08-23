@@ -132,7 +132,7 @@ const ProductModal = (props) => {
             )}
             <div className="purchase__buttons__box">
               <Link
-                to={`/product/${categoryId}/${id}`}
+                to={`/cart-app/product/${categoryId}/${id}`}
                 state={{ product, category }}
                 className="btn read__more__btn"
               >

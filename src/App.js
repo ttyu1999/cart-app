@@ -21,10 +21,10 @@ const App = () => {
             <SelectedProductProvide>
               <Header />
               <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="/product/*" element={<Main />} />
+                <Route path="" element={<Home />} />
+                <Route path="product/*" element={<Main />} />
                 <Route
-                  path="/product/:categoryId/:productId"
+                  path="product/:categoryId/:productId"
                   element={<ProductPage />}
                 />
               </Routes>

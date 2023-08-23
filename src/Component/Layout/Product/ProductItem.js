@@ -66,7 +66,7 @@ const ProductItem = (props) => {
     <>
       <li className={styles.product__list}>
         <Link
-          to={`/product/${categoryId}/${productId}`}
+          to={`/cart-app/product/${categoryId}/${productId}`}
           state={{ product, category}}
           className="wrap"
         >

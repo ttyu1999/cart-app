@@ -33,7 +33,7 @@ const HeaderSearch = () => {
 
     scrollToTop();
 
-    return navigate(`/product?product=${inputValue}`);
+    return navigate(`/cart-app/product?product=${inputValue}`);
   };
 
   const inputKeyDownHandler = (e) => {

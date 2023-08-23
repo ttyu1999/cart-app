@@ -16,14 +16,14 @@ const NavMenu = (props) => {
         <li key={menu.id}>
           {menu.id === "000000" ? (
             <Link
-              to={`/product`}
+              to={`../product`}
               onClick={() => categoriesClick(menu.id, onHide)}
             >
               {menu.name}
             </Link>
           ) : (
             <NavLink
-              to={`/product/${menu.id}`}
+              to={`/cart-app/product/${menu.id}`}
               onClick={() => categoriesClick(menu.id, onHide)}
             >
               {menu.name}

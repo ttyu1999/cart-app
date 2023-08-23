@@ -1,4 +1,3 @@
-import {  useLocation } from "react-router-dom";
 import { Routes, Route } from "react-router-dom";
 import Sidebar from "./Sidebar";
 import BreadCrumb from "./BreadCrumb";
@@ -12,15 +11,11 @@ import {
 } from "../../../store/product-context";
 import MENU_DATA from "../../../assets/menu-data";
 import useBreadCrumb from "../../../hook/useBreadCrumb";
+import useGetPath from "../../../hook/useGetPath";
 
 const Main = () => {
   const { getListBreadCrumb } = useBreadCrumb();
-  const location = useLocation();
-  const path = location.pathname;
-
-  const pathArray = path.split("/");
-  pathArray.splice(0, 2);
-  const pathStr = pathArray.join();
+  const { pathStr } = useGetPath();
 
   const breadcrumbItems = getListBreadCrumb(pathStr, MENU_DATA);
 

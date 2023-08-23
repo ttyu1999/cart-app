@@ -5,7 +5,7 @@ import "swiper/css";
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
-import AD_BANNER_IMG from './../assets/ad-banner-img';
+import AD_BANNER_IMG from '../assets/ad-banner-img';
 
 const BannerCarousel = () => {
 
@@ -24,7 +24,7 @@ const BannerCarousel = () => {
             {AD_BANNER_IMG.map((img) => {
                 return (
                     <SwiperSlide key={img.id}>
-                        <Link to="/product">
+                        <Link to="/cart-app/product">
                             <img src={img.url} alt={img.name} />
                         </Link>
                     </SwiperSlide>

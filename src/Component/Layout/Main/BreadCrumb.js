@@ -17,7 +17,7 @@ const BreadCrumb = (props) => {
         </Link>
       </li>
       <li key="product">
-        <Link to="/product">
+        <Link to="../product">
           <button type="button" onClick={scrollToTop}>
             全館商品
           </button>
@@ -27,7 +27,7 @@ const BreadCrumb = (props) => {
         props.breadCrumbs.map((breadcrumb) => {
           return (
             <li key={breadcrumb.id}>
-              <Link to={`/product/${breadcrumb.id}`}>
+              <Link to={`../product/${breadcrumb.id}`}>
                 <button type="button" onClick={scrollToTop}>
                   {breadcrumb.name}
                 </button>
