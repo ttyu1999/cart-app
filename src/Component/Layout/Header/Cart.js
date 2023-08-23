@@ -20,7 +20,7 @@ const Cart = (props) => {
   if (items.length === 0) {
     withoutItem = (
       <div className="without__item">
-        <img src="/img/withoutItem.png" alt="without__item" />
+        <img src={require('../../../assets/img/withoutItem.png')} alt="without__item" />
         <p>無選購商品</p>
       </div>
     );

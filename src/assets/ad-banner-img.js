@@ -1,25 +1,23 @@
-
-
 const AD_BANNER_IMG = [
     {
         id: 'banner01',
-        name: '臉部保養banner',
-        url: './src/assets/img/臉部保養banner.jpg',
+        name: 'banner',
+        url: 'banner(1).jpg',
     },
     {
         id: 'banner02',
-        name: '臉部保養banner',
-        url: './src/assets/img/臉部保養banner(2).jpg',
+        name: 'banner',
+        url: 'banner(2).jpg',
     },
     {
         id: 'banner03',
-        name: '臉部保養banner',
-        url: './src/assets/img/臉部保養banner(3).jpg',
+        name: 'banner',
+        url: 'banner(3).jpg',
     },
     {
         id: 'banner04',
-        name: '臉部保養banner',
-        url: './src/assets/img/臉部保養banner(4).jpg',
+        name: 'banner',
+        url: 'banner(4).jpg',
     }
 ];
 

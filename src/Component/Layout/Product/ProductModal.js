@@ -68,7 +68,7 @@ const ProductModal = (props) => {
   let swiperSlide = productImg?.map((img, index) => {
     return (
       <SwiperSlide key={index}>
-        <img src={img} alt={productName} />
+        <img src={require(`../../../assets/img/${img}`)} alt={productName} />
       </SwiperSlide>
     );
   });

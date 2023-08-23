@@ -3,8 +3,8 @@ const PRODUCT_DATA = [
         id: 'B0202001',
         addedTime: new Date("2023-7-31"),
         productImg: [
-            './img/彩妝/innisfree Grace Gift 九宮格眼影限量聯名組(眼影+唇萃).jpg',
-            './img/彩妝/innisfree Grace Gift 九宮格眼影限量聯名組(眼影+唇萃)法式馬卡龍.jpg'
+            '彩妝/innisfree Grace Gift 九宮格眼影限量聯名組(眼影+唇萃).jpg',
+            '彩妝/innisfree Grace Gift 九宮格眼影限量聯名組(眼影+唇萃)法式馬卡龍.jpg'
         ],
         mainCategory: {
             id: 'B',
@@ -63,8 +63,8 @@ const PRODUCT_DATA = [
         id: 'A0400001',
         addedTime: new Date("2023-5-31"),
         productImg: [
-            './img/彩妝/晨露無色潤唇膏.jpg',
-            './img/彩妝/晨露無色潤唇膏(2).jpg'
+            '彩妝/晨露無色潤唇膏.jpg',
+            '彩妝/晨露無色潤唇膏(2).jpg'
         ],
         mainCategory: {
             id: 'A',
@@ -112,9 +112,9 @@ const PRODUCT_DATA = [
         id: 'B0301001',
         addedTime: new Date("2022-7-31"),
         productImg: [
-            './img/彩妝/怦然空氣感薄霧唇膏(8色).jpg',
-            './img/彩妝/怦然空氣感薄霧唇膏.jpg',
-            './img/彩妝/怦然空氣感薄霧唇膏(1).jpg',
+            '彩妝/怦然空氣感薄霧唇膏(8色).jpg',
+            '彩妝/怦然空氣感薄霧唇膏.jpg',
+            '彩妝/怦然空氣感薄霧唇膏(1).jpg',
         ],
         mainCategory: {
             id: 'B',
@@ -208,8 +208,8 @@ const PRODUCT_DATA = [
         id: 'B0202002',
         addedTime: new Date("2023-7-28"),
         productImg: [
-            './img/彩妝/怦然空氣感眼彩盤.jpg',
-            './img/彩妝/怦然空氣感眼彩盤(2).jpg'
+            '彩妝/怦然空氣感眼彩盤.jpg',
+            '彩妝/怦然空氣感眼彩盤(2).jpg'
         ],
         mainCategory: {
             id: 'B',
@@ -275,8 +275,8 @@ const PRODUCT_DATA = [
         id: 'B0204001',
         addedTime: new Date("2023-7-20"),
         productImg: [
-            './img/彩妝/自然簡約低敏眉筆.jpg',
-            './img/彩妝/自然簡約低敏眉筆(2).jpg'
+            '彩妝/自然簡約低敏眉筆.jpg',
+            '彩妝/自然簡約低敏眉筆(2).jpg'
         ],
         mainCategory: {
             id: 'B',
@@ -342,8 +342,8 @@ const PRODUCT_DATA = [
         id: 'A0100001',
         addedTime: new Date("2023-8-31"),
         productImg: [
-            './img/精華液/[兔年限定] 綠茶火山雙星組.jpg',
-            './img/精華液/[兔年限定] 綠茶火山雙星組(2).jpg'
+            '精華液/[兔年限定] 綠茶火山雙星組.jpg',
+            '精華液/[兔年限定] 綠茶火山雙星組(2).jpg'
         ],
         mainCategory: {
             id: 'A',
@@ -382,8 +382,8 @@ const PRODUCT_DATA = [
         id: 'C0100001',
         addedTime: new Date("2023-10-31"),
         productImg: [
-            './img/身體髮品/我的香氛身體乳.jpg',
-            './img/身體髮品/我的香氛身體乳(2).jpg'
+            '身體髮品/我的香氛身體乳.jpg',
+            '身體髮品/我的香氛身體乳(2).jpg'
         ],
         mainCategory: {
             id: 'C',
@@ -443,8 +443,8 @@ const PRODUCT_DATA = [
         id: 'B0105001',
         addedTime: new Date("2023-2-31"),
         productImg: [
-            './img/彩妝/無油無慮保濕蜜粉.jpg',
-            './img/彩妝/無油無慮保濕蜜粉(2).jpg'
+            '彩妝/無油無慮保濕蜜粉.jpg',
+            '彩妝/無油無慮保濕蜜粉(2).jpg'
         ],
         mainCategory: {
             id: 'B',
@@ -489,8 +489,8 @@ const PRODUCT_DATA = [
         id: 'B0204002',
         addedTime: new Date("2023-7-21"),
         productImg: [
-            './img/彩妝/雙色眉彩餅.jpg',
-            './img/彩妝/雙色眉彩餅(2).jpg'
+            '彩妝/雙色眉彩餅.jpg',
+            '彩妝/雙色眉彩餅(2).jpg'
         ],
         mainCategory: {
             id: 'B',
@@ -542,8 +542,8 @@ const PRODUCT_DATA = [
         id: 'H0000001',
         addedTime: new Date("2023-5-7"),
         productImg: [
-            './img/三大精華/A醇淨膚超修護安瓶.jpg',
-            './img/三大精華/A醇淨膚超修護安瓶(2).jpg'
+            '三大精華/A醇淨膚超修護安瓶.jpg',
+            '三大精華/A醇淨膚超修護安瓶(2).jpg'
         ],
         mainCategory: {
             id: 'H',
@@ -576,8 +576,8 @@ const PRODUCT_DATA = [
         id: 'H0000002',
         addedTime: new Date("2023-3-4"),
         productImg: [
-            './img/三大精華/濟州紅茶彈潤修護組.jpg',
-            './img/三大精華/濟州紅茶彈潤修護組(2).jpg'
+            '三大精華/濟州紅茶彈潤修護組.jpg',
+            '三大精華/濟州紅茶彈潤修護組(2).jpg'
         ],
         mainCategory: {
             id: 'H',
@@ -610,9 +610,9 @@ const PRODUCT_DATA = [
         id: 'B0104001',
         addedTime: new Date("2023-6-1"),
         productImg: [
-            './img/彩妝/無油無慮零毛孔控油氣墊(5色).jpg',
-            './img/彩妝/無油無慮零毛孔控油氣墊(5色)(3).jpg',
-            './img/彩妝/無油無慮零毛孔控油氣墊(5色)(2).jpg'
+            '彩妝/無油無慮零毛孔控油氣墊(5色).jpg',
+            '彩妝/無油無慮零毛孔控油氣墊(5色)(3).jpg',
+            '彩妝/無油無慮零毛孔控油氣墊(5色)(2).jpg'
         ],
         mainCategory: {
             id: 'B',
@@ -685,8 +685,8 @@ const PRODUCT_DATA = [
         id: 'A01000002',
         addedTime: new Date("2023-2-28"),
         productImg: [
-            './img/精華液/九重完美青春再生活膚精華.jpg',
-            './img/精華液/九重完美青春再生活膚精華.jpg'
+            '精華液/九重完美青春再生活膚精華.jpg',
+            '精華液/九重完美青春再生活膚精華.jpg'
         ],
         mainCategory: {
             id: 'A',
@@ -725,9 +725,9 @@ const PRODUCT_DATA = [
         id: 'B0302001',
         addedTime: new Date("2023-1-15"),
         productImg: [
-            './img/彩妝/怦然空氣感薄霧唇萃(8色).jpg',
-            './img/彩妝/怦然空氣感薄霧唇萃(8色)(2).jpg',
-            './img/彩妝/怦然空氣感薄霧唇萃(8色)(3).jpg'
+            '彩妝/怦然空氣感薄霧唇萃(8色).jpg',
+            '彩妝/怦然空氣感薄霧唇萃(8色)(2).jpg',
+            '彩妝/怦然空氣感薄霧唇萃(8色)(3).jpg'
         ],
         mainCategory: {
             id: 'B',
@@ -821,8 +821,8 @@ const PRODUCT_DATA = [
         id: 'A01000003',
         addedTime: new Date("2022-11-20"),
         productImg: [
-            './img/精華液/濟州紅茶極效修護晶露75ml.jpg',
-            './img/精華液/濟州紅茶極效修護晶露75ml.jpg'
+            '精華液/濟州紅茶極效修護晶露75ml.jpg',
+            '精華液/濟州紅茶極效修護晶露75ml.jpg'
         ],
         mainCategory: {
             id: 'A',
@@ -861,8 +861,8 @@ const PRODUCT_DATA = [
         id: 'B0203001',
         addedTime: new Date("2023-1-5"),
         productImg: [
-            './img/彩妝/超強效不暈染眼線液.png',
-            './img/彩妝/超強效不暈染眼線液(2).jpg'
+            '彩妝/超強效不暈染眼線液.png',
+            '彩妝/超強效不暈染眼線液(2).jpg'
         ],
         mainCategory: {
             id: 'B',
@@ -914,9 +914,9 @@ const PRODUCT_DATA = [
         id: 'B0102001',
         addedTime: new Date("2023-5-2"),
         productImg: [
-            './img/彩妝/我的專屬遮瑕蜜[黑眼圈遮瑕].jpg',
-            './img/彩妝/我的專屬遮瑕蜜[黑眼圈遮瑕](2).jpg',
-            './img/彩妝/我的專屬遮瑕蜜[黑眼圈遮瑕](3).jpg'
+            '彩妝/我的專屬遮瑕蜜[黑眼圈遮瑕].jpg',
+            '彩妝/我的專屬遮瑕蜜[黑眼圈遮瑕](2).jpg',
+            '彩妝/我的專屬遮瑕蜜[黑眼圈遮瑕](3).jpg'
         ],
         mainCategory: {
             id: 'B',
@@ -968,8 +968,8 @@ const PRODUCT_DATA = [
         id: 'A0800001',
         addedTime: new Date("2023-3-23"),
         productImg: [
-            './img/臉部保養/向日葵完美清爽防曬霜.jpg',
-            './img/臉部保養/向日葵完美清爽防曬霜(2).jpg'
+            '臉部保養/向日葵完美清爽防曬霜.jpg',
+            '臉部保養/向日葵完美清爽防曬霜(2).jpg'
         ],
         mainCategory: {
             id: 'A',
@@ -1008,8 +1008,8 @@ const PRODUCT_DATA = [
         id: 'A0800002',
         addedTime: new Date("2023-8-7"),
         productImg: [
-            './img/臉部保養/向日葵亮顏控油防曬霜.jpg',
-            './img/臉部保養/向日葵亮顏控油防曬霜.jpg'
+            '臉部保養/向日葵亮顏控油防曬霜.jpg',
+            '臉部保養/向日葵亮顏控油防曬霜.jpg'
         ],
         mainCategory: {
             id: 'A',
@@ -1048,8 +1048,8 @@ const PRODUCT_DATA = [
         id: 'A0800003',
         addedTime: new Date("2023-4-20"),
         productImg: [
-            './img/臉部保養/向日葵完美全效防曬霜.jpg',
-            './img/臉部保養/向日葵完美全效防曬霜.jpg'
+            '臉部保養/向日葵完美全效防曬霜.jpg',
+            '臉部保養/向日葵完美全效防曬霜.jpg'
         ],
         mainCategory: {
             id: 'A',
@@ -1088,8 +1088,8 @@ const PRODUCT_DATA = [
         id: 'A0800004',
         addedTime: new Date("2023-5-31"),
         productImg: [
-            './img/臉部保養/向日葵亮顏水感防曬霜.jpg',
-            './img/臉部保養/向日葵亮顏水感防曬霜.jpg'
+            '臉部保養/向日葵亮顏水感防曬霜.jpg',
+            '臉部保養/向日葵亮顏水感防曬霜.jpg'
         ],
         mainCategory: {
             id: 'A',
@@ -1128,8 +1128,8 @@ const PRODUCT_DATA = [
         id: 'A0800005',
         addedTime: new Date("2023-5-31"),
         productImg: [
-            './img/臉部保養/水感高效防曬精華.jpg',
-            './img/臉部保養/水感高效防曬精華(2).jpg'
+            '臉部保養/水感高效防曬精華.jpg',
+            '臉部保養/水感高效防曬精華(2).jpg'
         ],
         mainCategory: {
             id: 'A',

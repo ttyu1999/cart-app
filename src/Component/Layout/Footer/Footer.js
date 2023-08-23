@@ -13,7 +13,7 @@ const Footer = () => {
         <div className="logo__info">
           <Link to="">
             <h2>
-              <img src="/img/logo.png" alt="INNISFREE" />
+              <img src={require('../../../assets/img/logo.png')} alt="INNISFREE" />
             </h2>
           </Link>
           <div className="brand__icon">

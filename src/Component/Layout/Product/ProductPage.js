@@ -52,7 +52,7 @@ const ProductPage = () => {
   let swiperSlide = productImg?.map((img, index) => {
     return (
       <SwiperSlide key={index}>
-        <img src={img} alt={productName} />
+        <img src={require(`../../../assets/img/${img}`)} alt={productName} />
       </SwiperSlide>
     );
   });
@@ -241,7 +241,7 @@ const ProductPage = () => {
         <div className="tab__content">
           <div className="edit">
             <p style={{ textAlign: "center" }}>
-              <img src="/img/彩妝/文宣圖.jpg" alt="文宣圖" />
+              <img src={require('../../../assets/img/彩妝/文宣圖.jpg')} alt="文宣圖" />
             </p>
           </div>
         </div>

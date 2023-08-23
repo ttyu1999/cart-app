@@ -39,14 +39,10 @@ const CartItem = (props) => {
   return (
     <li className="product__list">
       <div className="pic">
-        <a>
-          <img src={productImg} alt={productName} />
-        </a>
+        <img src={require(`../../../assets/img/${productImg}`)} alt={productName} />
       </div>
       <div className="txt">
-        <a>
-          <h2>{productName}</h2>
-        </a>
+        <h2>{productName}</h2>
         <p className="spec">{`－ ${specName}`}</p>
         <div className="price__box">
           {productOriPrice && (

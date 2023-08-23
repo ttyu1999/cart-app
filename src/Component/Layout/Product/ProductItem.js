@@ -7,6 +7,7 @@ import useBreadCrumb from "../../../hook/useBreadCrumb";
 import MENU_DATA from "../../../assets/menu-data";
 import NumberWithCommas from "../../Provider/NumberWithCommas";
 
+
 const ProductItem = (props) => {
   const { getProductBreadCrumb, findMenuByCategoryId } = useBreadCrumb();
   const { product, productId, onSelected, onShownModal } = props;
@@ -71,8 +72,8 @@ const ProductItem = (props) => {
           className="wrap"
         >
           <div className="pic">
-            <img src={productImg[0]} alt={productName} />
-            <img src={productImg[1]} alt={productName} />
+            <img src={require(`../../../assets/img/${productImg[0]}`)} alt={productName} />
+            <img src={require(`../../../assets/img/${productImg[1]}`)} alt={productName} />
           </div>
           <div className="txt">
             <h2>{productName}</h2>

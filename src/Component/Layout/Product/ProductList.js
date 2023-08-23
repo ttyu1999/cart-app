@@ -114,7 +114,7 @@ const ProductList = () => {
   if (filterProducts.length === 0) {
     withoutItem = (
       <div className="without__item">
-        <img src="/img/withoutItem.png" alt="without__item" />
+        <img src={require('../../../assets/img/withoutItem.png')} alt="without__item" />
         <p>
           <span>．</span>
           <span>．</span>

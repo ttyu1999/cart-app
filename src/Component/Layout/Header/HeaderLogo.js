@@ -5,7 +5,7 @@ const HeaderLogo = (props) => {
         <div className="logo">
             <Link to="">
                 <h1>
-                    <img src="/img/logo.png" alt="INNISFREE" />
+                    <img src={require('../../../assets/img/logo.png')} alt="INNISFREE" />
                 </h1>
             </Link> 
         </div>

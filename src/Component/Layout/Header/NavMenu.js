@@ -16,7 +16,7 @@ const NavMenu = (props) => {
         <li key={menu.id}>
           {menu.id === "000000" ? (
             <Link
-              to={`../product`}
+              to={`/cart-app/product`}
               onClick={() => categoriesClick(menu.id, onHide)}
             >
               {menu.name}
