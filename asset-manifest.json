@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/cart-app/static/css/main.ba3ad3d6.css",
-    "main.js": "/cart-app/static/js/main.74a6d717.js",
+    "main.js": "/cart-app/static/js/main.32a2a972.js",
     "static/js/787.f2dba37b.chunk.js": "/cart-app/static/js/787.f2dba37b.chunk.js",
     "static/media/文宣圖.jpg": "/cart-app/static/media/文宣圖.28819c49bc51c24316fb.jpg",
     "static/media/怦然空氣感薄霧唇膏(1).jpg": "/cart-app/static/media/怦然空氣感薄霧唇膏(1).391d5dd0c84252ed46ba.jpg",
@@ -53,11 +53,11 @@
     "static/media/withoutItem.svg": "/cart-app/static/media/withoutItem.bab4fc70145b43e90c68.svg",
     "index.html": "/cart-app/index.html",
     "main.ba3ad3d6.css.map": "/cart-app/static/css/main.ba3ad3d6.css.map",
-    "main.74a6d717.js.map": "/cart-app/static/js/main.74a6d717.js.map",
+    "main.32a2a972.js.map": "/cart-app/static/js/main.32a2a972.js.map",
     "787.f2dba37b.chunk.js.map": "/cart-app/static/js/787.f2dba37b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ba3ad3d6.css",
-    "static/js/main.74a6d717.js"
+    "static/js/main.32a2a972.js"
   ]
 }
