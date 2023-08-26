@@ -9,7 +9,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <HashRouter>
       <Routes>
-          <Route path="/cart-app/*" element={<App/>}/>
+          <Route path="/" element={<App/>}/>
       </Routes>
     </HashRouter>
 );
