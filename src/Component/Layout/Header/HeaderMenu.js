@@ -4,7 +4,7 @@ import { HiX } from "react-icons/hi";
 import Modal from "../../../Component/UI/Modal";
 import { useContext } from "react";
 import useHideModel from "../../../hook/useHideModal";
-import { ModalContext } from "../../../store/modal-context";
+import { ModalContext } from "../../../store/contexts";
 
 const HeaderMenu = (props) => {
   const modalCtx = useContext(ModalContext);

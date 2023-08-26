@@ -1,10 +1,4 @@
 .sidebar {
-    // 第一層選單
-    > ul > li > * {
-        color: var(--dark__green__color);
-        font-weight: 500;
-    }
-
     &:global {
         &::-webkit-inner-spin-button {
             -webkit-appearance: none;
@@ -59,14 +53,14 @@
                         bottom: -.25em;
                         width: 0;
                         height: 1px;
-                        background-color: var(--light__pink__color);
+                        background-color: var(--primary__color);
                         transition: width .2s ease-in-out;
                     }
                 }
 
                 &:hover {
                     span {
-                        color: var(--light__pink__color);
+                        color: var(--primary__color);
 
                         &:before {
                             width: 100%;
@@ -78,7 +72,8 @@
             &:has(.active) > *,
             .active {
                 & > span {
-                    color: var(--light__pink__color);
+                    color: var(--primary__color);
+                    font-weight: 500;
                 }
             }
 
@@ -104,7 +99,7 @@
                 /* 下拉選單控制 */
             .drop__down {
                 width: 100%;
-                padding-left: 1em;
+                padding-left: .5rem;
                 display: grid;
                 transition: grid-template-rows 1.5s;
 
@@ -115,11 +110,6 @@
 
             /* 第二層選單 */
             .sub__menu {
-                li:has(.sub__menu) > * {
-                    color: var(--primary__color);
-                    font-weight: 500;
-                }
-
                 a {
                     display: -webkit-box;
                     -webkit-box-orient: vertical;

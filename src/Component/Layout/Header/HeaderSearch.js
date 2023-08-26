@@ -2,7 +2,7 @@ import { useNavigate } from "react-router-dom";
 import { HiOutlineSearch } from "react-icons/hi";
 import styles from "./HeaderSearch.module.scss";
 import { useCallback, useContext, useEffect, useRef, useState } from "react";
-import { SearchContext, PageContext } from "../../../store/product-context";
+import { SearchContext, PageContext } from "../../../store/contexts";
 import useScrollTop from "../../../hook/useScrollTop";
 
 const HeaderSearch = () => {

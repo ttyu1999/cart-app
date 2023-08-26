@@ -6,14 +6,12 @@ import ProductPrice from "./ProductPrice";
 import ProductQuantity from "./ProductQuantity";
 import ProductPurchase from "./ProductPurchase";
 import useBreadCrumb from "../../../hook/useBreadCrumb";
-import { SelectedProductContext } from "../../../store/product-context";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import styles from "./ProductModal.module.scss";
 import Modal from "../../UI/Modal";
-import { ModalContext } from "../../../store/modal-context";
 import useHideModel from "../../../hook/useHideModal";
-import { CartContext } from "../../../store/cart-context";
+import { CartContext, ModalContext, SelectedProductContext } from "../../../store/contexts";
 import MENU_DATA from "../../../assets/menu-data";
 
 const ProductModal = (props) => {
@@ -128,7 +126,7 @@ const ProductModal = (props) => {
                 />
               )
             ) : (
-              <ProductQuantity singleSpecStock={productSpecs[0].stock} />
+              <ProductQuantity singleSpecStock={productSpecs[0].stock} setUserSeletedQuantity={setUserSeletedQuantity} />
             )}
             <div className="purchase__buttons__box">
               <Link

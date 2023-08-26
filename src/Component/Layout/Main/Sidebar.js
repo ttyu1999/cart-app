@@ -9,20 +9,11 @@ import useBreadCrumb from "../../../hook/useBreadCrumb";
 import useGetPath from "../../../hook/useGetPath";
 
 const Sidebar = () => {
-  const [getActiveId, setGetActiveId] = useState([]);
+  const [getActiveId, setGetActiveId] = useState(null);
   const [expandedState, setExpandedState] = useState({});
   const { pathStr } = useGetPath();
   const { categoriesClick } = useFindMenuItem();
   const { getListBreadCrumb } = useBreadCrumb();
-
-  const arrowClickHandler = (id) => {
-    setExpandedState((prevExpandedState) => {
-      return {
-        ...prevExpandedState,
-        [id]: !prevExpandedState[id],
-      };
-    });
-  };
 
   const activeLinkId = useCallback(() => {
     const activeItem = getListBreadCrumb(pathStr, MENU_DATA);
@@ -33,6 +24,30 @@ const Sidebar = () => {
   useEffect(() => {
     activeLinkId();
   }, [activeLinkId]);
+
+  const arrowClickHandler = (id) => {
+    const remove = (arr, item) => {
+      const index = arr.indexOf(item);
+      return [
+          // 給定項之前的數組的一部分
+          ...arr.slice(0, index),
+          // 給定項之後的數組的一部分
+          ...arr.slice(index + 1)
+      ];
+    }
+
+    const isExpanded = expandedState[id] || false;
+    const isActive = getActiveId && getActiveId.some((activeId) => activeId === id);
+
+    isActive && setGetActiveId(remove(getActiveId, id));
+  
+    setExpandedState((prevExpandedState) => {
+      return {
+        ...prevExpandedState,
+        [id]: isActive ? false : !isExpanded,
+      };
+    });
+  };
 
   const renderListItem = (menu) => {
     const isSubMenuExpanded = expandedState[menu.id] || false;

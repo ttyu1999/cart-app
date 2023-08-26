@@ -1,5 +1,5 @@
-import { useCallback, useContext } from "react";
-import { ModalContext } from "../store/modal-context";
+import { useContext } from "react";
+import { ModalContext } from "../store/contexts";
 
 const useHideModel = () => {
     const modalCtx = useContext(ModalContext);

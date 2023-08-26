@@ -16,9 +16,9 @@ import styles from "./ProductPage.module.scss";
 import BreadCrumb from "../Main/BreadCrumb";
 import ProductQuantity from "./ProductQuantity";
 import ProductPrice from "./ProductPrice";
-import { SelectedProductContext } from "../../../store/product-context";
 import ProductPurchase from "./ProductPurchase";
-import { CartContext } from "../../../store/cart-context";
+import { CartContext, SelectedProductContext } from "../../../store/contexts";
+
 
 const ProductPage = () => {
   const { state } = useLocation();

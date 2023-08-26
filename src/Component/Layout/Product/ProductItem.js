@@ -5,8 +5,7 @@ import classes from './ProductPrice.module.scss';
 import { HiOutlineEye } from "react-icons/hi";
 import useBreadCrumb from "../../../hook/useBreadCrumb";
 import MENU_DATA from "../../../assets/menu-data";
-import NumberWithCommas from "../../Provider/NumberWithCommas";
-
+import NumberWithCommas from "../../../Provider/NumberWithCommas";
 
 const ProductItem = (props) => {
   const { getProductBreadCrumb, findMenuByCategoryId } = useBreadCrumb();
@@ -90,4 +89,4 @@ const ProductItem = (props) => {
   );
 };
 
-export default React.memo(ProductItem);
+export default ProductItem;

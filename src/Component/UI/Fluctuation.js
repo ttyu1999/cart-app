@@ -17,7 +17,7 @@ const Fluctuation = (props) => {
                 type="number"
                 onChange={props.onGetUserInputValue}
                 value={props.onInputValue}
-                disabled={props.disabled}
+                readOnly={props.readOnly}
             />
             <button
                 type="button"

@@ -1,17 +1,18 @@
 import React, { useContext } from "react";
 import { HiShoppingCart } from "react-icons/hi";
-import { CartContext } from "../../../store/cart-context";
 import PRODUCT_DATA from "../../../assets/product-data";
+import { CartContext } from "../../../store/contexts";
+
 
 const ProductPurchase = () => {
   const cartCtx = useContext(CartContext);
-  const { addToCart, productId, productSpecId, selectedQuantity } = cartCtx;
+  const { addToCart, productId, productSpecId, quantity } = cartCtx;
 
   const handleAddToCart = () => {
     const newItem = {
       productId,
       productSpecId,
-      selectedQuantity,
+      quantity,
     };
 
     const product = PRODUCT_DATA.find(
@@ -30,7 +31,7 @@ const ProductPurchase = () => {
           productPrice: product.productPrice,
           specName: productSpec.specName,
           stock: productSpec.stock,
-          selectedQuantity: newItem.selectedQuantity,
+          selectedQuantity: newItem.quantity,
         };
 
         addToCart(updatedItem);

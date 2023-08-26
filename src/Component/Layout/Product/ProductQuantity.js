@@ -1,8 +1,8 @@
 import React, { useCallback, useContext, useEffect, useState } from "react";
 import styles from './ProductQuantity.module.scss';
-import { SelectedProductContext } from "../../../store/product-context";
 import Fluctuation from "../../UI/Fluctuation";
-import { CartContext } from "../../../store/cart-context";
+import { CartContext, SelectedProductContext } from "../../../store/contexts";
+
 
 const ProductQuantity =(props) => {
     const { singleSpecStock, multipleSpecStock, setUserSeletedQuantity } = props;
@@ -13,7 +13,7 @@ const ProductQuantity =(props) => {
     const { isResetQuantity } = selectedProductCtx;
 
     const cartCtx = useContext(CartContext);
-    const { setSelectedQuantity } = cartCtx;
+    const { setQuantity } = cartCtx;
 
     useEffect(() => {
         if (isResetQuantity) {
@@ -23,9 +23,9 @@ const ProductQuantity =(props) => {
     }, [isResetQuantity]);
 
     useEffect(() => {
-        setUserSeletedQuantity && setUserSeletedQuantity(inputValue);
-        setSelectedQuantity(inputValue);
-    }, [setUserSeletedQuantity, setSelectedQuantity, inputValue]);
+        setUserSeletedQuantity(inputValue);
+        setQuantity(inputValue);
+    }, [setUserSeletedQuantity, setQuantity, inputValue]);
 
     const stockShortage = !isStockShortage || <p className={`${styles.stock__shortage} ${props.stockClassName ? props.stockClassName : ''}`}>庫存不足，無法訂購您選擇之數量</p>;
 

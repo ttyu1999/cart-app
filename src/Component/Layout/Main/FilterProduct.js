@@ -1,8 +1,7 @@
 import { useContext, useState } from 'react';
 import FormSelect from '../../UI/FormSelect';
-import { ProductListFilter } from '../../../store/product-context';
 import FILTER_DATA from '../../../assets/filter-data';
-
+import { ProductListFilter } from '../../../store/contexts';
 
 const FilterProduct = () => {
     const [ filterList, setFilterList ] = useState(false);

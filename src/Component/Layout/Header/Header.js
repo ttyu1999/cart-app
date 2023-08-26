@@ -7,7 +7,7 @@ import HeaderLogo from "./HeaderLogo";
 import HeaderLoginButton from "./HeaderLoginButton";
 import HeaderCartButton from "./HeaderCartButton";
 import Cart from "./Cart";
-import { CartContext } from "../../../store/cart-context";
+import { CartContext } from "../../../store/contexts";
 
 const Header = () => {
   const [shownMenu, setShownMenu] = useState(false);

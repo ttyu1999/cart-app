@@ -1,8 +1,8 @@
-import React, { useCallback } from 'react';
+import React from 'react';
 import { useContext } from 'react';
 import styles from './ProductSpecList.module.scss';
-import { SelectedProductContext } from '../../../store/product-context';
-import { CartContext } from '../../../store/cart-context';
+import { CartContext, SelectedProductContext } from "../../../store/contexts";
+
 
 const ProductSpecList = (props) => {
     const { productSpec, onSelected, setShowQty } = props;

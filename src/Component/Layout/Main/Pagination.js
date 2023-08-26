@@ -1,8 +1,8 @@
 import React from 'react';
 import { useContext } from 'react';
 import styles from './Pagination.module.scss';
-import { PageContext } from '../../../store/product-context';
 import useScrollTop from "../../../hook/useScrollTop";
+import { PageContext } from '../../../store/contexts';
 
 const Pagination = () => {
     const { scrollToTop } = useScrollTop();

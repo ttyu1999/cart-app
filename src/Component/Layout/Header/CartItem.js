@@ -1,8 +1,9 @@
 import React, { useContext } from "react";
-import NumberWithCommas from "../../Provider/NumberWithCommas";
+import NumberWithCommas from "../../../Provider/NumberWithCommas";
 import { HiOutlineTrash } from "react-icons/hi";
 import Fluctuation from "../../UI/Fluctuation";
-import { CartContext } from "../../../store/cart-context";
+import { CartContext } from "../../../store/contexts";
+
 
 const CartItem = (props) => {
   const {
@@ -58,7 +59,7 @@ const CartItem = (props) => {
             onDecrease={() => quantityHandler("decrease")}
             onGetUserInputValue={getUserInputValue}
             onInputValue={selectedQuantity}
-            disabled="disabled"
+            readOnly="readOnly"
           />
           <div className="delete" onClick={() => quantityHandler("delete")}>
             <span className="icon">

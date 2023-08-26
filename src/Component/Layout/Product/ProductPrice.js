@@ -1,5 +1,5 @@
 import React from "react";
-import NumberWithCommas from '../../../Component/Provider/NumberWithCommas';
+import NumberWithCommas from '../../../Provider/NumberWithCommas';
 import styles from './ProductPrice.module.scss';
 
 const ProductPrice = (props) => {

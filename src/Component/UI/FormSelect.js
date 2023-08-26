@@ -2,7 +2,8 @@ import React, { useCallback, useContext } from 'react';
 import { useRef, useEffect } from 'react';
 import { HiOutlineChevronDown } from "react-icons/hi";
 import styles from './FormSelect.module.scss';
-import { SelectedProductContext } from '../../store/product-context';
+import { SelectedProductContext } from '../../store/contexts';
+
 
 const FormSelect = (props) => {
     const { filterList, setFilterList } = props;

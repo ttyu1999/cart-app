@@ -1,8 +1,8 @@
 import { useNavigate } from "react-router-dom";
 import { useContext } from "react";
-import { PageContext } from "../store/product-context";
 import MENU_DATA from "../assets/menu-data";
 import useScrollTop from "./useScrollTop";
+import { PageContext } from "../store/contexts";
 
 const useFindMenuItem = () => {
   const { scrollToTop } = useScrollTop();

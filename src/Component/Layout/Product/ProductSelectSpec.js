@@ -1,8 +1,8 @@
-import React, { useMemo } from 'react';
+import React from 'react';
 import { useCallback, useContext, useState } from 'react';
 import ProductSpecList from './ProductSpecList';
 import FormSelect from '../../UI/FormSelect';
-import { SelectedProductContext } from '../../../store/product-context';
+import { SelectedProductContext } from "../../../store/contexts";
 
 const ProductSelectSpec = (props) => {
     const { productSpecs, setShowQty } = props;

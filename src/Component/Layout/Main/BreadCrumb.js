@@ -12,7 +12,7 @@ const BreadCrumb = (props) => {
       }`}
     >
       <li key="home">
-        <Link to="/">
+        <Link to="../">
           <button type="button">首頁</button>
         </Link>
       </li>

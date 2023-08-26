@@ -2,10 +2,9 @@ import styles from "./Cart.module.scss";
 import Modal from "../../UI/Modal";
 import { HiX } from "react-icons/hi";
 import { useContext } from "react";
-import NumberWithCommas from "../../Provider/NumberWithCommas";
-import { ModalContext } from "../../../store/modal-context";
+import NumberWithCommas from "../../../Provider/NumberWithCommas";
+import { ModalContext, CartContext } from "../../../store/contexts";
 import useHideModel from "../../../hook/useHideModal";
-import { CartContext } from "../../../store/cart-context";
 import CartItem from "./CartItem";
 
 const Cart = (props) => {
