@@ -38,15 +38,18 @@ const FormSelect = (props) => {
     const toggleArrow = `icon ${filterList ? "rotate" : ''}`;
 
     return (
-        <div className={`${styles.select} ${props.maxWidth ? styles.width : ''}`}>
-            <div className="select__filter" onClick={showListHandler} ref={filterListRef}>
-                <button type="button" className="filter__btn">{props.selectDefault}</button>
-                <span className={toggleArrow}><HiOutlineChevronDown /></span>
+        <>
+            <div className={`${styles.select} ${props.maxWidth ? styles.width : ''}`}>
+                <div className="select__filter" onClick={showListHandler} ref={filterListRef}>
+                    <button type="button" className="filter__btn">{props.selectDefault}</button>
+                    <span className={toggleArrow}><HiOutlineChevronDown /></span>
+                </div>
+                <ul className={toggleList}>
+                    {props.children}
+                </ul>
             </div>
-            <ul className={toggleList}>
-                {props.children}
-            </ul>
-        </div>
+            <div className={`${styles.overlay} ${!filterList ? styles.hidden : ''}`}></div>
+        </>
     );
 }
 

@@ -11,6 +11,7 @@
         border: 1px solid var(--dark__gray__color);
         border-radius: .3em;
         position: relative;
+        z-index: 2;
     
         .select__filter {
             padding: .5rem;
@@ -79,5 +80,22 @@
         .hidden {
             display: none;
         }
+    }
+}
+
+.overlay {
+    display: none;
+}
+
+@media (hover: none) {
+    .overlay {
+        display: block;
+        position: fixed;
+        inset: 0;
+        z-index: 100;
+    }
+
+    .hidden {
+        visibility: hidden;
     }
 }
