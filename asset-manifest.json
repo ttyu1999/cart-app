@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/cart-app/static/css/main.5d24d2e1.css",
+    "main.css": "/cart-app/static/css/main.bdca3d98.css",
     "main.js": "/cart-app/static/js/main.14a269b0.js",
     "static/js/787.f2dba37b.chunk.js": "/cart-app/static/js/787.f2dba37b.chunk.js",
     "static/media/文宣圖.jpg": "/cart-app/static/media/文宣圖.28819c49bc51c24316fb.jpg",
@@ -52,12 +52,12 @@
     "static/media/雙色眉彩餅.jpg": "/cart-app/static/media/雙色眉彩餅.9646c7787e4c5fd7157f.jpg",
     "static/media/withoutItem.svg": "/cart-app/static/media/withoutItem.bab4fc70145b43e90c68.svg",
     "index.html": "/cart-app/index.html",
-    "main.5d24d2e1.css.map": "/cart-app/static/css/main.5d24d2e1.css.map",
+    "main.bdca3d98.css.map": "/cart-app/static/css/main.bdca3d98.css.map",
     "main.14a269b0.js.map": "/cart-app/static/js/main.14a269b0.js.map",
     "787.f2dba37b.chunk.js.map": "/cart-app/static/js/787.f2dba37b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5d24d2e1.css",
+    "static/css/main.bdca3d98.css",
     "static/js/main.14a269b0.js"
   ]
 }
